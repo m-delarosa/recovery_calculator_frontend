@@ -13,14 +13,14 @@
 <body>
     <header>
         <h1>Recovery Caculator</h1>
-        <p>Find out how it will be before your back to 💯</p>
+        <p>Find out how long it will be before you're back to 💯</p>
     </header>
     <main>
         <section class="calculator-container">
             <h2 class="section-header">New Activity</h2>
             <form class="calculator-form">
                 <p class="form-text">Exercise Type:</p>
-                <select required id="activity_types">
+                <select name="activity-type" required id="activity_types">
                     <option value="4">Run</option>
                     <option value="4">Bike</option>
                     <option value="4">Swim</option>
@@ -34,13 +34,14 @@
                 <p class="form-text">Duration:</p>
                 <input required class="form-input" type="text" name="duration" placeholder="Time in minutes">
                 <p class="form-text">Perceived Exertion:</p>
-                <select required id="exertion_type">
-                    <option value="low">Easy</option>
-                    <option value="medium">Moderate</option>
-                    <option value="high">High Effort</option>
+                <select required name="intensity">
+                    <option value="1">Easy</option>
+                    <option value="2">Moderate</option>
+                    <option value="3">High Effort</option>
 
                 </select>
                 <button class="button" type="submit">Submit</button>
+                <H2 class="recovery-time"></H2>
             </form>
 
         </section>
