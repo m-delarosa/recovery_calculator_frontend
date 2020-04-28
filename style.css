@@ -80,7 +80,7 @@ table {
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   header p {
@@ -88,7 +88,7 @@ table {
     font-size: 1rem;
     font-weight: 400;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   main {
@@ -113,4 +113,20 @@ table {
     color: var(--font-medium);
     font-size: 1.5rem;
     font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.calculator-form {
+    background: var(--background-light);
+    height: 488px;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 54px 13%;
+}
+
+.form-text {
+    color: var(--font-light);
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
 }

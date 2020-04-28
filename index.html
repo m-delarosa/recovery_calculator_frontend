@@ -18,6 +18,32 @@
     <main>
         <section class="calculator-container">
             <h2 class="section-header">New Activity</h2>
+            <form class="calculator-form">
+                <p class="form-text">Exercise Type:</p>
+                <select required id="activity_types">
+                    <option value="4">Run</option>
+                    <option value="4">Bike</option>
+                    <option value="4">Swim</option>
+                    <option value="3">Hike</option>
+                    <option value="3">Walk</option>
+                    <option value="3">Weight Training</option>
+                    <option value="4">Crossfit</option>
+                    <option value="3">Circuits</option>
+                    <option value="3">HIIT</option>
+                </select>
+                <p class="form-text">Duration:</p>
+                <input required class="form-input" type="text" name="duration" placeholder="Time in minutes">
+                <p class="form-text">Perceived Exertion:</p>
+                <select required id="exertion_type">
+                    <option value="low">Easy</option>
+                    <option value="medium">Moderate</option>
+                    <option value="high">High Effort</option>
+
+                </select>
+                <button class="button" type="submit">Submit</button>
+            </form>
+
+        </section>
         </section>
         <section class="login-container">
             <h2 class="section-header">Login</h2>
