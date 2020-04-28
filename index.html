@@ -13,14 +13,14 @@
 <body>
     <header>
         <h1>Recovery Caculator</h1>
-        <p>Find out how long it will be before you're back to 💯</p>
+        <p>How long will it take before you're back at 💯</p>
     </header>
     <main>
         <section class="calculator-container">
             <h2 class="section-header">New Activity</h2>
             <form class="calculator-form">
                 <p class="form-text">Exercise Type:</p>
-                <select name="activity-type" required id="activity_types">
+                <select name="activity-type" class="form-select" required id="activity_types">
                     <option value="4">Run</option>
                     <option value="4">Bike</option>
                     <option value="4">Swim</option>
@@ -34,7 +34,7 @@
                 <p class="form-text">Duration:</p>
                 <input required class="form-input" type="text" name="duration" placeholder="Time in minutes">
                 <p class="form-text">Perceived Exertion:</p>
-                <select required name="intensity">
+                <select required class="form-select" name="intensity">
                     <option value="1">Easy</option>
                     <option value="2">Moderate</option>
                     <option value="3">High Effort</option>
@@ -48,6 +48,30 @@
         </section>
         <section class="login-container">
             <h2 class="section-header">Login</h2>
+            <div class="login-card">
+                <form action=“http://localhost:3000/users” method=“POST”>
+                    <ul>
+                        <li>
+                            <label for="name" class="form-text">Name:</label>
+                            <input class="form-input" type="text" id="name" name='name' />
+                        </li>
+                        <li>
+                            <label for="email" class="form-text">Email:</label>
+                            <input class="form-input" type="text" id="email" name='email' />
+                        </li>
+                        <li>
+                            <label for="password" class="form-text">Password:</label>
+                            <input class="form-input" type="text" id="password" name='password' />
+                        </li>
+                        <li class=“button”>
+                            <button type=“submit”>Submit</button>
+                        </li>
+                    </ul>
+                </form>
+
+                <h2 class="past-activities form-text">Past Activities</h2>
+                <ul class="exercise-log"></ul>
+            </div>
         </section>
     </main>
 
