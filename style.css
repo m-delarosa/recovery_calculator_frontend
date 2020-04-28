@@ -96,14 +96,14 @@ table {
       justify-content: space-between;
   }
   .calculator-container {
-      width: 66.5vw;
+      width: 74vw;
       height: 100vh;
       background: var(--background-dark);
       padding: 2rem;
   }
 
   .login-container {
-    width: 22.5vw;
+    width: 25vw;
     height: 100vh;
     background: var(--background-dark);
     padding: 2rem;
@@ -128,5 +128,5 @@ table {
     color: var(--font-light);
     font-size: 1.2em;
     font-weight: 400;
-    margin: 0;
+    margin-bottom: 1rem;
 }
